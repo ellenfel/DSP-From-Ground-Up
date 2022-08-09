@@ -1,5 +1,5 @@
 /* 
- *  gcc Signal-Mean.c waveforms.c -lm -o Calcs
+ *  gcc Mean-Var-Std.c waveforms.c -lm -o Calcs
  *  ./Calcs
  */
 

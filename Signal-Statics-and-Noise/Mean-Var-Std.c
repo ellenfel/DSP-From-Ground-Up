@@ -57,7 +57,7 @@ double calc_signal_variance(double *sig_src_arr, double sig_mean, int sig_length
 }
 
 
-//Standard Deviation
+//std is short 4 Standard Deviation not 4 Save the Date :)
 double calc_signal_std(double sig_variance)
 {
 	double _std = sqrt(sig_variance);

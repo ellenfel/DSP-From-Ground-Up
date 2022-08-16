@@ -51,6 +51,7 @@ gnuplot.plot_axis_height = gnuplot.plot_axis_ymax - gnuplot.plot_axis_ymin;
 </html>
 ```
 
+canvas output:
 ![alt text](https://github.com/ellenfel/DSP-From-Ground-Up/blob/master/Convolution/canvas-output.png?raw=true)
 
 ### GNU Plot

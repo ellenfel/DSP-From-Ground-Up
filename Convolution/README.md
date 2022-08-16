@@ -54,4 +54,30 @@ gnuplot.plot_axis_height = gnuplot.plot_axis_ymax - gnuplot.plot_axis_ymin;
 canvas output:
 ![alt text](https://github.com/ellenfel/DSP-From-Ground-Up/blob/master/Convolution/canvas-output.png?raw=true)
 
+
+So we've designed a low pass filter.
+It's taken a input signal(input_signal.dat).
+and convolved with this impulse response signal(impulse_response.dat) and get the output signal as a result.
+Like we designed,  impulse response signal has a cut-off frequency of 6 kHz.
+So in effect it's a low pass filter.
+What we have represented as an output signal is just has 1 kHZ and this 1 kHz signal was hidden
+within the input signal that is a 15 kHz signal.
+But by using our convolution algorithm we've been able to successfully filter out the high frequency
+components.
+
 ### GNU Plot
+```
+gnuplot> set terminal canvas
+gnuplot> set output 'output.html'
+gnuplot> set terminal canvas rounded size 1300,600
+gnuplot> reset
+gnuplot> set size 1,1
+gnuplot> set multiplot
+multiplot> set size 0.5,0.5
+multiplot> set origin 0,0.5
+multiplot> plot 'input_signal.dat' with lines lc rgb 'black'
+multiplot> set origin 0.5,0.5
+multiplot> plot 'impulse_response.dat' with lines lc rgb 'red'
+multiplot> set origin 0,0
+multiplot> plot 'output_signal.dat' with lines lc rgb 'blue'
+```

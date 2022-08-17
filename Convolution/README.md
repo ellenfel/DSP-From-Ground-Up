@@ -92,7 +92,7 @@ Running-sum algorithm can be used as a smoothing filter
 It works a bit like the moving-average filter.  Which can be used to smooth out a signal without indicating the cutoff frequency.
 By using a simple running sum algorithm, You can take out the noise and do things like peak detection.
 Imagine we are writing an algorithm to detect the peaks in the given input signal signal.
-It's going to be rather difficult to detect a peak in the signal course you've caught so much noise and there multiple local peaks in each cycle. So the algoritm wowuld work faster if the signal goes through running-sum algorithm before processing
+It's going to be rather difficult to detect a peak in the signal course since you've caught so much noise and there is multiple local peaks in each cycle. So a detection like algorithm would have work faster if the signal goes through the running-sum algorithm before processing
 
 ### output file and gnuplot
 Almost exact same steps apply in this algorithm as well. just add the lines that given for convolution to end of your html file

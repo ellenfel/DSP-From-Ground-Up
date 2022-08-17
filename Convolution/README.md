@@ -1,3 +1,4 @@
+## Convolution
 ### output.html file
 
 if graph does not appear chances are gnuplot didn't add the following lines to the end of the 'output.html' file so add them after the lines of:
@@ -81,3 +82,23 @@ multiplot> plot 'impulse_response.dat' with lines lc rgb 'red'
 multiplot> set origin 0,0
 multiplot> plot 'output_signal.dat' with lines lc rgb 'blue'
 ```
+
+## Running-Sum Algorithm
+
+![alt text](https://github.com/ellenfel/DSP-From-Ground-Up/blob/master/Convolution/RunningSum-CanvasOutput.png?raw=true)
+So this is the resort produced by the running-sum algorithm and from here we can tell that the
+
+Running-sum algorithm can be used as a smoothing filter
+It works a bit like the moving-average filter.  Which can be used to smooth out a signal without indicating the cutoff frequency.
+By using a simple running sum algorithm, You can take out the noise and do things like peak detection.
+Imagine we are writing an algorithm to detect the peaks in the given input signal signal.
+It's going to be rather difficult to detect a peak in the signal course you've caught so much noise and there multiple local peaks in each cycle. So the algoritm wowuld work faster if the signal goes through running-sum algorithm before processing
+
+### output file and gnuplot
+Almost exact same steps apply in this algorithm as well. just add the lines that given for convolution to end of your html file
+for producing the graph you wont need the lines of
+```
+multiplot> set origin 0.5,0.5
+multiplot> plot 'impulse_response.dat' with lines lc rgb 'red'
+```
+other than that its exactly same. Just maybe set the output file name, something other than `output.html` so it wouldn't overwrite in to convulion graph 

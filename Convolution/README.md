@@ -95,8 +95,8 @@ Imagine we are writing an algorithm to detect the peaks in the given input signa
 It's going to be rather difficult to detect a peak in the signal course since you've caught so much noise and there is multiple local peaks in each cycle. So a detection like algorithm would have work faster if the signal goes through the running-sum algorithm before processing
 
 ### output file and gnuplot
-Almost exact same steps apply in this algorithm as well. just add the lines that given for convolution to end of your html file
-for producing the graph you wont need the lines of
+Almost exact same steps apply in this algorithm as well. So if html file wont produce a graph just add the lines that given for the same issue in convolution graph to end of your html file. <br />
+While producing an html file in Gnuplot you wont need the lines of
 ```
 multiplot> set origin 0.5,0.5
 multiplot> plot 'impulse_response.dat' with lines lc rgb 'red'

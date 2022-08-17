@@ -87,7 +87,7 @@ multiplot> plot 'output_signal.dat' with lines lc rgb 'blue'
 
 ![alt text](https://github.com/ellenfel/DSP-From-Ground-Up/blob/master/Convolution/RunningSum-CanvasOutput.png?raw=true)
 
-So this is the resort produced by the running-sum algorithm and from here we can tell that the
+So this is the result produced by the running-sum algorithm and from here we can tell that the
 Running-sum algorithm can be used as a smoothing filter
 It works a bit like the moving-average filter.  Which can be used to smooth out a signal without indicating the cutoff frequency.
 By using a simple running sum algorithm, You can take out the noise and do things like peak detection.

@@ -30,8 +30,8 @@ int main()
 
     input_rex_fptr  = fopen("input_rex.dat","w");
     input_imx_fptr  = fopen("input_imx.dat","w");
-    output_ph_fptr  = fopen("output_mag.dat","w");
-    output_mag_fptr = fopen("output_phase.dat","w");
+    output_mag_fptr = fopen("output_mag.dat","w");
+    output_ph_fptr  = fopen("output_phase.dat","w");
 
     for(int i = 0;i<SIG_LENGTH;i++)
     {
@@ -40,7 +40,7 @@ int main()
         fprintf(output_ph_fptr, "\n%f", Output_phase[i]);
         fprintf(output_mag_fptr, "\n%f",Output_magnitude[i]);
     }
-    
+
     fclose(input_rex_fptr);
     fclose(input_imx_fptr);
     fclose(output_ph_fptr);

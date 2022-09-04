@@ -47,8 +47,6 @@ int main()
     return 0;
 }
 
-}
-
 void complex_dft(double *sig_src_time_domain_rex,
                  double *sig_src_time_domain_imx,
                  double *sig_dest_freq_domain_rex,
